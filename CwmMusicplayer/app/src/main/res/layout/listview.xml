@@ -10,7 +10,7 @@
         android:textSize="16sp"/>
 
     <TextView
-        android:id="@+id/artist_name"
+        android:id="@+id/music_artist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"

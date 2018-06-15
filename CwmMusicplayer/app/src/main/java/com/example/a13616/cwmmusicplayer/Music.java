@@ -6,33 +6,33 @@ package com.example.a13616.cwmmusicplayer;
 
 public class Music {
     private String musicName;
-    private String artistName;
+    private String musicArtist;
     private String musicPath;
     private String musicDuration;
 
-    //构造方法，没有返回值
-    public void Music(String musicName1,String artistName1,String musicPath1,String musicDuration1){
+    //构造方法，没有返回值,不能加void,否则报错
+    public Music(String musicName1,String musicArtist1,String musicPath1,String musicDuration1){
         //this指当前这个对象
         this.musicName=musicName1;
-        this.artistName=artistName1;
+        this.musicArtist=musicArtist1;
         this.musicPath=musicPath1;
         this.musicDuration=musicDuration1;
     }
 
     //普通方法，必须有返回值
-    public String getSongName(){
+    public String getMusicName(){
         return this.musicName;
     }
 
-    public String getArtistName(){
-        return this.artistName;
+    public String getMusicArtist(){
+        return this.musicArtist;
     }
 
-    public String getSongPath(){
+    public String getMusicPath(){
         return this.musicPath;
     }
 
-    public String getSongDuration(){
+    public String getMusicDuration(){
         return this.musicDuration;
     }
 }
